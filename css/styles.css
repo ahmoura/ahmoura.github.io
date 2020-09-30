@@ -10133,3 +10133,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+#lang_button{
+  cursor:pointer;
+}
+
+.lang_en {
+  display: block; 
+}
+
+.lang_pt {
+  display: none;
+}
