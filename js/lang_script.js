@@ -18,7 +18,7 @@ function changeLanguage() {
     education_button.innerHTML = "Education";
     skills_button.innerHTML = "Skills";
     interests_button.innerHTML = "Interests";
-    resume_button.href="assets/resume_en.pdf";
+    resume_button.href="https://github.com/ahmoura/ahmoura.github.io/raw/master/assets/resume_en.pdf";
 
     for (i = 0; i < en.length; i++) {
       en[i].style.display = "block";
