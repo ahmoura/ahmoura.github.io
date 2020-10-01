@@ -38,7 +38,3 @@ function changeLanguage() {
     lang_en = false;
   }
 }
-
-window.onload = function() {
-  changeLanguage();
-};
