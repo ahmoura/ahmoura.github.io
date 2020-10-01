@@ -1,0 +1,40 @@
+var language_button = document.getElementById("lang_button");
+var about_button = document.getElementById("about_button");
+var experience_button = document.getElementById("experience_button");
+var education_button = document.getElementById("education_button");
+var skills_button = document.getElementById("skills_button");
+var interests_button = document.getElementById("interests_button");
+
+var en = document.getElementsByClassName("lang_en");
+var pt = document.getElementsByClassName("lang_pt");
+var lang_en = true;
+
+function changeLanguage() {
+  if (lang_en == false) {
+    language_button.innerHTML = "Português";
+    about_button.innerHTML = "About";
+    experience_button.innerHTML = "Experience";
+    education_button.innerHTML = "Education";
+    skills_button.innerHTML = "Skills";
+    interests_button.innerHTML = "Interests";
+
+    for (i = 0; i < en.length; i++) {
+      en[i].style.display = "block";
+      pt[i].style.display = "none";
+    }
+    lang_en = true;
+  } else {
+    language_button.innerHTML = "English";
+    about_button.innerHTML = "Sobre";
+    experience_button.innerHTML = "Experiência";
+    education_button.innerHTML = "Educação";
+    skills_button.innerHTML = "Habilidades";
+    interests_button.innerHTML = "Interesses";
+    
+    for (i = 0; i < en.length; i++) {
+      en[i].style.display = "none";
+      pt[i].style.display = "block";
+    }
+    lang_en = false;
+  }
+}
