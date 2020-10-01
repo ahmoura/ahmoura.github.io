@@ -4,6 +4,7 @@ var experience_button = document.getElementById("experience_button");
 var education_button = document.getElementById("education_button");
 var skills_button = document.getElementById("skills_button");
 var interests_button = document.getElementById("interests_button");
+var resume_button = document.getElementById("resume_file");
 
 var en = document.getElementsByClassName("lang_en");
 var pt = document.getElementsByClassName("lang_pt");
@@ -17,6 +18,7 @@ function changeLanguage() {
     education_button.innerHTML = "Education";
     skills_button.innerHTML = "Skills";
     interests_button.innerHTML = "Interests";
+    resume_button.href="assets/resume_en.pdf";
 
     for (i = 0; i < en.length; i++) {
       en[i].style.display = "block";
@@ -30,6 +32,7 @@ function changeLanguage() {
     education_button.innerHTML = "Educação";
     skills_button.innerHTML = "Habilidades";
     interests_button.innerHTML = "Interesses";
+    resume_button.href="assets/resume_pt.pdf";
     
     for (i = 0; i < en.length; i++) {
       en[i].style.display = "none";
@@ -38,3 +41,7 @@ function changeLanguage() {
     lang_en = false;
   }
 }
+
+// window.onload = function() {
+//   changeLanguage();
+// };
